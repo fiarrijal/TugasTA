@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<!-- <link rel="shortcut icon" href="./images/browsers-icon.svg" type="image/x-icon" /> -->
+		<script src="https://kit.fontawesome.com/5659d0154b.js" crossorigin="anonymous"></script>
+		<title>Temperature Converter</title>
+	</head>
+
+	<body>
+		<section class="change-color mt-5">
+			<div class="container">
+				<row>
+					<div class="col-12 col-md-6">
+						<div class="card">
+							<div class="card-body">
+								<div class="my-3">
+									<h4 class="text-center mb-3">Change background color with button</h4>
+									<div class="input-group mb-3">
+										<input type="color" class="form-control form-control-color" id="ColorInput1" value="#563d7c" title="Choose your color" />
+										<button class="btn btn-outline-primary color-button" type="button" id="button-addon2">Button</button>
+									</div>
+								</div class="my-3">
+								<h4 class="mb-3 text-center">Change background color without button</h4>
+								<div><input type="color" class="form-control form-control-color" id="ColorInput2" value="#563d7c" title="Choose your color" /></div>
+							</div>
+						</div>
+					</div>
+				</row>
+			</div>
+		</section>
+
+		<div class="section temperature mt-5" id="temperature">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<div class="card">
+							<div class="card-body">
+								<h3 class="text-center">Temperature Converter</h3>
+								<div class="row mt-4">
+									<div class="col-12 col-md-5 form" id="from">
+										<input type="number" class="temp-input" id="input" placeholder="" />
+										<select class="temp-select" id="first-temp">
+											<option value="celcius" selected>Celcius</option>
+											<option value="reamur">Reamur</option>
+											<option value="fahrenheit">Fahrenheit</option>
+										</select>
+									</div>
+									<div class="col-12 col-md-2 equal text-center">=</div>
+									<div class="col-12 col-md-5 form" id="to">
+										<input class="temp-input" id="output-to" type="number" disabled />
+										<select class="temp-select" id="result-temp">
+											<option value="celcius">Celcius</option>
+											<option value="reamur">Reamur</option>
+											<option value="fahrenheit">Fahrenheit</option>
+										</select>
+									</div>
+								</div>
+								<div class="row mt-3">
+									<div class="col-12"><span class="fw-bolder">Rumus : </span><span id="rumus"></span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Option 1: Bootstrap Bundle with Popper -->
+		
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+		<!-- <script src="./src/Convert.js"></script> -->
+		<script type="module" src="./src/script.js"></script>
+		<script></script>
+	</body>
+</html>

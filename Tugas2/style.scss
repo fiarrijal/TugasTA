@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+$yaleBlue: #084b83;
+$lightBlue: #edf7fa;
+$powderBlue: #bbe6e4;
+$cultured: #f0f6f6;
+$hotPink: #ff66b3;
+$darkGreen: #136223;
+
+html {
+	font-size: 16px !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Heebo", sans-serif;
+}
+
+p,
+span,
+a {
+	font-family: "Inter", sans-serif;
+}
+
+.hero {
+	margin-top: 200px;
+	margin-bottom: 156px;
+	&-title {
+		color: $yaleBlue;
+		font-weight: 700;
+		font-size: 2.75rem;
+	}
+	&-profession {
+		font-size: 1.75rem;
+		font-style: italic;
+		margin-bottom: 1rem;
+		color: rgba($color: $yaleBlue, $alpha: 0.75);
+	}
+
+	&-image {
+		width: 300px;
+		border-radius: 50%;
+		box-shadow: -6px 13px 6px -5px $lightBlue;
+		-webkit-box-shadow: -6px 13px 6px -5px $lightBlue;
+		-moz-box-shadow: -6px 13px 6px -5px $lightBlue;
+	}
+}
+
+.profile {
+	background-color: $lightBlue;
+	padding: 20px 0 80px 0;
+
+	&-title {
+		color: $darkGreen;
+		font-weight: 600;
+		font-size: 1.125rem;
+		margin-bottom: 1rem;
+	}
+}
+
+.contact {
+	margin-bottom: 0.75em;
+	i {
+		margin-right: 20px;
+	}
+}
+
+.university {
+	&-title {
+		font-size: 0.875rem;
+		font-weight: 600;
+		margin-bottom: 0;
+	}
+
+	&-major {
+		font-size: 0.75rem;
+		font-style: italic;
+		margin-right: 1.5rem;
+	}
+
+	&-year {
+		font-size: 0.75rem;
+	}
+
+	&-description {
+		font-size: 0.75rem;
+		color: #52575c;
+	}
+}
+
+.project {
+	font-family: "Heebo", sans-serif !important;
+	&-image {
+		border-radius: 6px;
+		width: 100%;
+	}
+
+	&-title {
+		font-size: 1.875rem;
+		color: $yaleBlue;
+		font-weight: 700;
+	}
+
+	&-year {
+		background-color: #142850;
+		border-radius: 16px;
+		color: #fff;
+		font-weight: 600;
+		padding: 3px 12px;
+		margin-right: 20px;
+	}
+
+	&-category {
+		color: #8695a4;
+	}
+	&-description {
+		margin-top: 16px;
+
+		font-family: "Heebo", sans-serif !important;
+	}
+}
+
+.social-media {
+	list-style: none;
+
+	&-item {
+		display: inline;
+		margin: 0 10px;
+		font-size: 2rem;
+	}
+
+	&-link {
+		color: $yaleBlue;
+	}
+}
+
+footer {
+	margin-top: 80px;
+	color: $yaleBlue;
+	font-family: "Heebo", sans-serif;
+	font-size: 0.875rem;
+}
+
+@media only screen and (max-width: 768px) {
+	.hero {
+		margin-bottom: 50px;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.hero {
+		&-image {
+			width: 75%;
+		}
+	}
+
+	.project-title {
+		margin-top: 1rem;
+	}
+}

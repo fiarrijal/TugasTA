@@ -1,0 +1,57 @@
+$softBlue: hsl(231, 69%, 60%);
+$softRed: hsl(0, 94%, 66%);
+$grayBlue: hsl(229, 8%, 60%);
+$darkBlue: hsl(229, 31%, 21%);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-size: 18px;
+	font-family: "Rubik", sans-serif;
+	line-height: 1.6;
+	color: $grayBlue;
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+.container {
+	margin: 0 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+section {
+	margin: 50px 0;
+}
+
+.section {
+	&-text {
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 2em;
+		&-title {
+			font-size: 2em;
+			color: $darkBlue;
+			margin-bottom: 0.25em;
+		}
+	}
+}
+
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 992px;
+
+@media only screen and (max-width: $breakpoint-tablet) {
+	.container {
+		margin: 0 50px;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+	}
+}

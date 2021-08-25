@@ -1,0 +1,35 @@
+body {
+  background-color: #fff;
+}
+
+.temp-input {
+  width: 100%;
+  padding: 10px 5px;
+  border-bottom: none;
+  border: 1px solid #dadce0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #000;
+}
+
+.temp-input:checked {
+  border: none;
+}
+
+.temp-select {
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 5px 5px;
+  border: 1px solid #dadce0;
+  border-top: none;
+}
+
+.equal {
+  font-size: 3rem;
+}
+
+input[type="number"]:disabled {
+  background: #fff;
+}
+/*# sourceMappingURL=style.css.map */

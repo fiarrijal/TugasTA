@@ -1,0 +1,231 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-size: 18px;
+	font-family: "Rubik", sans-serif;
+	line-height: 1.6;
+	color: #9194a1;
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+.container {
+	margin: 0 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+section {
+	margin: 50px 0;
+}
+
+.section-text {
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 2em;
+}
+.section-text-title {
+	font-size: 2em;
+	color: #252b46;
+	margin-bottom: 0.25em;
+}
+
+@media only screen and (max-width: 768px) {
+	.container {
+		margin: 0 50px;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+header {
+	width: 100%;
+	padding-top: 1em;
+	width: 100vw;
+	margin-bottom: 40px;
+	position: fixed;
+	top: 0;
+	background-color: #fff;
+	z-index: 2;
+	box-shadow: 0px 10px 14px -16px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0px 10px 14px -16px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0px 10px 14px -16px rgba(0, 0, 0, 0.1);
+}
+header .header-logo {
+	font-size: 2em;
+	font-weight: 600;
+}
+header .header-logo .logo-text-blue {
+	color: #252b46;
+}
+header .header-logo .logo-text-red {
+	color: #fa5757;
+}
+header .header-nav {
+	list-style-type: none;
+}
+header .header-nav .nav-item {
+	display: inline;
+	margin-left: 1em;
+}
+header .header-nav .nav-item .nav-link {
+	text-decoration: none;
+	color: #5368df;
+	transition: 0.25s;
+}
+header .header-nav .nav-item .nav-link:hover {
+	color: #fa5757;
+}
+
+.hero {
+	width: 100%;
+	position: relative;
+	margin-top: 125px;
+}
+.hero .container .hero-text {
+	flex-basis: 50%;
+}
+.hero .container .hero-text .hero-title {
+	font-size: 2em;
+	color: #252b46;
+}
+.hero .container .hero-image {
+	flex-basis: 50%;
+	display: flex;
+}
+.hero .container .hero-image img {
+	margin-left: auto;
+	width: 75%;
+}
+
+@media only screen and (max-width: 768px) {
+	.hero-text {
+		text-align: center;
+		margin: 36px 0;
+	}
+	.hero-image img {
+		margin: 0 auto;
+	}
+}
+
+.profile .container .profile-image {
+	flex-basis: 50%;
+}
+.profile .container .profile-image img {
+	width: 75%;
+	border-radius: 10px;
+}
+
+.profile .container .profile-text {
+	flex-basis: 40%;
+}
+.profile .container .profile-text .profile-title {
+	color: #252b46;
+	font-size: 2em;
+	margin-bottom: 1em;
+}
+.profile .container .profile-text .row .col-name {
+	color: #5368df;
+	margin-right: 10px;
+	font-weight: 600;
+}
+.profile .container .profile-text .row .col-data a {
+	text-decoration: none;
+	color: #252b46;
+	font-weight: 600;
+}
+.profile .container .profile-text .row .col-data a:hover {
+	color: #fa5757;
+}
+
+@media only screen and (max-width: 768px) {
+	.profile-image {
+		flex-basis: 100%;
+		width: 100%;
+		margin: 27px;
+	}
+	.profile-image img {
+		display: block;
+		width: 75%;
+		border-radius: 10px;
+		margin: auto;
+	}
+	.profile-text {
+		flex-basis: 100%;
+	}
+	.profile-text .profile-title {
+		color: #252b46;
+		font-size: 20px;
+		margin-bottom: 9px !important;
+		text-align: center;
+	}
+}
+
+.music .card-container {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	margin: 0 100px;
+	-webkit-overflow-scrolling: touch;
+}
+.music .card-container .card {
+	flex: 0 0 auto;
+	width: 200px;
+	position: relative;
+	display: inline-block;
+	border-radius: 8px;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	margin-right: 8px;
+}
+.music .card-container .card img {
+	width: 100%;
+}
+.music .card-container .card-title {
+	padding: 0 10px;
+	color: #5368df;
+	font-weight: 500;
+	padding-top: 0.5em;
+}
+.music .card-container .card-subtitle {
+	padding: 0 10px;
+	font-size: 0.75em;
+	padding-bottom: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+	.music {
+		margin-top: 100px;
+	}
+	.music .card-container {
+		margin: 0 50px;
+	}
+	.music .card-container .card {
+		width: 125px;
+	}
+	.music .card-container .card-title {
+		font-size: 0.75em;
+	}
+	.music .card-container .card-subtitle {
+		font-size: 0.5em;
+	}
+}
+
+footer {
+	background-color: #5368df;
+	color: #fff;
+	padding: 10px 0;
+	margin-top: 200px;
+}
+
+.footer-text {
+	display: block;
+	text-align: center;
+}

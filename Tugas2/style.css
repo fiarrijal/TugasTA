@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+html {
+  font-size: 16px !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Heebo", sans-serif;
+}
+
+p,
+span,
+a {
+  font-family: "Inter", sans-serif;
+}
+
+.hero {
+  margin-top: 200px;
+  margin-bottom: 156px;
+}
+
+.hero-title {
+  color: #084b83;
+  font-weight: 700;
+  font-size: 2.75rem;
+}
+
+.hero-profession {
+  font-size: 1.75rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: rgba(8, 75, 131, 0.75);
+}
+
+.hero-image {
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: -6px 13px 6px -5px #edf7fa;
+  -webkit-box-shadow: -6px 13px 6px -5px #edf7fa;
+  -moz-box-shadow: -6px 13px 6px -5px #edf7fa;
+}
+
+.profile {
+  background-color: #edf7fa;
+  padding: 20px 0 80px 0;
+}
+
+.profile-title {
+  color: #136223;
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.contact {
+  margin-bottom: 0.75em;
+}
+
+.contact i {
+  margin-right: 20px;
+}
+
+.university-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.university-major {
+  font-size: 0.75rem;
+  font-style: italic;
+  margin-right: 1.5rem;
+}
+
+.university-year {
+  font-size: 0.75rem;
+}
+
+.university-description {
+  font-size: 0.75rem;
+  color: #52575c;
+}
+
+.project {
+  font-family: "Heebo", sans-serif !important;
+}
+
+.project-image {
+  border-radius: 6px;
+  width: 100%;
+}
+
+.project-title {
+  font-size: 1.875rem;
+  color: #084b83;
+  font-weight: 700;
+}
+
+.project-year {
+  background-color: #142850;
+  border-radius: 16px;
+  color: #fff;
+  font-weight: 600;
+  padding: 3px 12px;
+  margin-right: 20px;
+}
+
+.project-category {
+  color: #8695a4;
+}
+
+.project-description {
+  margin-top: 16px;
+  font-family: "Heebo", sans-serif !important;
+}
+
+.social-media {
+  list-style: none;
+}
+
+.social-media-item {
+  display: inline;
+  margin: 0 10px;
+  font-size: 2rem;
+}
+
+.social-media-link {
+  color: #084b83;
+}
+
+footer {
+  margin-top: 80px;
+  color: #084b83;
+  font-family: "Heebo", sans-serif;
+  font-size: 0.875rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .hero-image {
+    width: 75%;
+  }
+  .project-title {
+    margin-top: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
